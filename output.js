@@ -1,7 +1,9 @@
-//Mon Aug 05 2024 00:45:07 GMT+0000 (Coordinated Universal Time)
+//Mon Aug 05 2024 01:14:18 GMT+0000 (Coordinated Universal Time)
 //Base:https://github.com/echo094/decode-js
 //Modify:https://github.com/smallfawn/decode_action
-NAME = "薏米短剧";
+//薏米第二次解密
+//第三次？
+NAME = "\u858F\u7C73\u77ED\u5267";
 VALY = ["ymdjck"];
 CK = "";
 SID = [134118, 134119, 134284, 134156, 134155, 134154, 134153];
@@ -24,7 +26,7 @@ class 蛋炒饭_0x25588c {
     this.url = _0x1245aa.split("#")[0];
     this.txtype = _0x1245aa.split("#")[1];
     this._ = ++usid;
-    _0x1245aa.split("#")[2] ? this.f = "小主 [" + this._ + "] " + _0x1245aa.split("#")[2] : this.f = "小主 [" + this._ + "] ";
+    _0x1245aa.split("#")[2] ? this.f = "\u5C0F\u4E3B [" + this._ + "] " + _0x1245aa.split("#")[2] : this.f = "\u5C0F\u4E3B [" + this._ + "] ";
     let _0x3ab5dd = ["usr", "rgt", "pc", "p1", "p2", "p3", "p4", "p5", "p7", "p9", "p16", "p21", "p22", "p25", "p28", "p29", "p30", "p31", "p33", "p34", "p35", "zysid"];
     蛋炒饭_0x4368c7(this, _0x3ab5dd, this.url);
     this.message = "";
@@ -46,7 +48,7 @@ class 蛋炒饭_0x25588c {
         "x-sig-timestamp": _0x728bd9
       },
       _0x380e98 = await $.task("get", "https://theater.zhangyue.com/welfare/gold/user/gold_account?account_type=0&gold_type=2&zysid=" + this.zysid + "&usr=" + this.usr + "&rgt=" + this.rgt + "&p1=" + this.p1 + "&pc=" + this.pc + "&p2=" + this.p2 + "&p3=" + this.p3 + "&p4=" + this.p4 + "&p5=" + this.p5 + "&p7=" + this.p7 + "&p9=" + this.p9 + "&p16=" + this.p16 + "&p21=" + this.p21 + "&p22=" + this.p22 + "&p25=" + this.p25 + "&p28=" + this.p28 + "&p29=" + this.p29 + "&p30=" + this.p30 + "&p31=" + this.p31 + "&p33=" + this.p33 + "&p34=" + this.p34 + "&p35=" + this.p35 + "&timestamp=" + _0x728bd9, _0x56de38);
-    _0x380e98.code == 0 ? (console.log("【" + this.f + "】登陆成功，今日金币" + _0x380e98.body.total_gold_num + ",余额：" + _0x380e98.body.actual_withdraw_num + "元"), this.message += "【" + this.f + "】登陆成功，今日金币" + _0x380e98.body.total_gold_num + ",余额：" + _0x380e98.body.actual_withdraw_num + "元", this.logs = true, _0x380e98.body.actual_withdraw_num >= 1 && (await this.tx())) : this.logs = false;
+    _0x380e98.code == 0 ? (console.log("\u3010" + this.f + "\u3011\u767B\u9646\u6210\u529F\uFF0C\u4ECA\u65E5\u91D1\u5E01" + _0x380e98.body.total_gold_num + ",\u4F59\u989D\uFF1A" + _0x380e98.body.actual_withdraw_num + "\u5143"), this.message += "\u3010" + this.f + "\u3011\u767B\u9646\u6210\u529F\uFF0C\u4ECA\u65E5\u91D1\u5E01" + _0x380e98.body.total_gold_num + ",\u4F59\u989D\uFF1A" + _0x380e98.body.actual_withdraw_num + "\u5143", this.logs = true, _0x380e98.body.actual_withdraw_num >= 1 && (await this.tx())) : this.logs = false;
   }
   async ["tasklist"]() {
     let _0xd6cdb8 = $.time(13),
@@ -62,7 +64,7 @@ class 蛋炒饭_0x25588c {
     if (_0x2e2758.code == 0) {
       for (let _0x191b8c of _0x2e2758.body.act_d713ed16.task_list) {
         let _0x504932 = "act_d713ed16";
-        if (_0x191b8c.title = "签到7天最高赚30元") {
+        if (_0x191b8c.title = "\u7B7E\u52307\u5929\u6700\u9AD8\u8D5A30\u5143") {
           for (let _0x231abe of _0x191b8c.sub_task_list) {
             _0x231abe.status == "un_finished" && (await this.dotask(_0x504932, _0x191b8c.id, _0x231abe.id, _0x191b8c.title));
           }
@@ -70,7 +72,7 @@ class 蛋炒饭_0x25588c {
       }
       for (let _0x47d346 of _0x2e2758.body.act_fab57a8c.task_list) {
         let _0x25c34a = "act_fab57a8c";
-        if (_0x47d346.title != "看小说赚钱") {
+        if (_0x47d346.title != "\u770B\u5C0F\u8BF4\u8D5A\u94B1") {
           for (let _0x43725f of _0x47d346.sub_task_list) {
             if (_0x43725f.status == "un_finished" || _0x43725f.reward_status == "un_reward") {
               await this.dotask(_0x25c34a, _0x47d346.id, _0x43725f.id, _0x47d346.title);
@@ -93,10 +95,10 @@ class 蛋炒饭_0x25588c {
       _0x10ac36 = "act_id=" + _0x1bceba + "&task_id=" + _0x46e7d5 + "&sub_task_id=" + _0x2db1e0 + "&zysid=" + this.zysid + "&usr=" + this.usr + "&rgt=" + this.rgt + "&p1=" + this.p1 + "&pc=" + this.pc + "&p2=" + this.p2 + "&p3=" + this.p3 + "&p4=" + this.p4 + "&p5=" + this.p5 + "&p7=" + this.p7 + "&p9=" + this.p9 + "&p16=" + this.p16 + "&p21=" + this.p21 + "&p22=" + this.p22 + "&p25=" + this.p25 + "&p28=" + this.p28 + "&p29=" + this.p29 + "&p30=" + this.p30 + "&p31=" + this.p31 + "&p33=" + this.p33 + "&p34=" + this.p34 + "&p35=" + this.p35 + "&timestamp=" + _0x42cc2e,
       _0x41e620 = await $.task("post", "https://theater.zhangyue.com/task_api/task/draw_gift", _0x3c2a68, _0x10ac36);
     if (_0x41e620.code == 0) {
-      console.log("【" + this.f + "】获取" + _0x53d187 + "成功，获得" + _0x41e620.body.gift_info[0].amount + "金币");
+      console.log("\u3010" + this.f + "\u3011\u83B7\u53D6" + _0x53d187 + "\u6210\u529F\uFF0C\u83B7\u5F97" + _0x41e620.body.gift_info[0].amount + "\u91D1\u5E01");
       await $.wait(6000, 10000);
     } else {
-      console.log("【" + this.f + "】获取" + _0x53d187 + "失败，原因：" + _0x41e620.msg);
+      console.log("\u3010" + this.f + "\u3011\u83B7\u53D6" + _0x53d187 + "\u5931\u8D25\uFF0C\u539F\u56E0\uFF1A" + _0x41e620.msg);
     }
   }
   async ["shuavideopre"]() {
@@ -123,11 +125,11 @@ class 蛋炒饭_0x25588c {
         _0x545118 = await $.task("post", "https://theater.zhangyue.com/task_api/task/draw_gift", _0xd3dc7d, _0x16b8b3);
       if (_0x545118.code == 0) {
         for (let _0xb5a924 of _0x545118.body.gift_info) {
-          console.log("【" + this.f + "】刷视频成功，获得" + _0xb5a924.amount + "金币");
+          console.log("\u3010" + this.f + "\u3011\u5237\u89C6\u9891\u6210\u529F\uFF0C\u83B7\u5F97" + _0xb5a924.amount + "\u91D1\u5E01");
           await $.wait(40000, 65000);
         }
       } else {
-        console.log("【" + this.f + "】刷视频失败，原因：" + _0x545118.msg);
+        console.log("\u3010" + this.f + "\u3011\u5237\u89C6\u9891\u5931\u8D25\uFF0C\u539F\u56E0\uFF1A" + _0x545118.msg);
       }
     }
   }
@@ -143,13 +145,13 @@ class 蛋炒饭_0x25588c {
       },
       _0x3b1443 = "type=" + this.txtype + "&amount=1&sub_id=293&account_type=0&gold_type=2&zysid=" + this.zysid + "&usr=" + this.usr + "&rgt=" + this.rgt + "&p1=" + this.p1 + "&pc=" + this.pc + "&p2=" + this.p2 + "&p3=" + this.p3 + "&p4=" + this.p4 + "&p5=" + this.p5 + "&p7=" + this.p7 + "&p9=" + this.p9 + "&p16=" + this.p16 + "&p21=" + this.p21 + "&p22=" + this.p22 + "&p25=" + this.p25 + "&p28=" + this.p28 + "&p29=" + this.p29 + "&p30=" + this.p30 + "&p31=" + this.p31 + "&p33=" + this.p33 + "&p34=" + this.p34 + "&p35=" + this.p35 + "&timestamp=" + _0xdf7b60,
       _0x11b0b7 = await $.task("post", "https://theater.zhangyue.com/welfare/gold/withdraw/exec", _0x3851b0, _0x3b1443);
-    _0x11b0b7.code == 0 ? (console.log("【" + this.f + "】提现1元成功"), this.message += "【" + this.f + "】提现1元成功") : console.log("【" + this.f + "】提现失败，原因：" + _0x11b0b7.msg);
+    _0x11b0b7.code == 0 ? (console.log("\u3010" + this.f + "\u3011\u63D0\u73B01\u5143\u6210\u529F"), this.message += "\u3010" + this.f + "\u3011\u63D0\u73B01\u5143\u6210\u529F") : console.log("\u3010" + this.f + "\u3011\u63D0\u73B0\u5931\u8D25\uFF0C\u539F\u56E0\uFF1A" + _0x11b0b7.msg);
   }
 }
 $ = 蛋炒饭_0x2bef4e();
 !(async () => {
-  console.log("正在运行脚本：【" + NAME + "】V1.06");
-  console.log("📢 请认真阅读以下声明\n 【免责声明】   \n📌 脚本文件仅用于测试和学习研究   \n📌 脚本文件任何人不得用于商业以及非法用途   \n📌 禁止任何公众号、自媒体进行任何形式的转发   \n📌 脚本文件请在下载试用后24小时内自行删除   \n📌 因使用脚本造成软件平台的一切损失皆由使用者承担   \n📌 脚本文件如有不慎被破解或修改由破解或修改者承担   \n📌 如不接受此条款请立即删除脚本文件");
+  console.log("\u6B63\u5728\u8FD0\u884C\u811A\u672C\uFF1A\u3010" + NAME + "\u3011V1.06");
+  console.log("\uD83D\uDCE2 \u8BF7\u8BA4\u771F\u9605\u8BFB\u4EE5\u4E0B\u58F0\u660E\n \u3010\u514D\u8D23\u58F0\u660E\u3011   \n\uD83D\uDCCC \u811A\u672C\u6587\u4EF6\u4EC5\u7528\u4E8E\u6D4B\u8BD5\u548C\u5B66\u4E60\u7814\u7A76   \n\uD83D\uDCCC \u811A\u672C\u6587\u4EF6\u4EFB\u4F55\u4EBA\u4E0D\u5F97\u7528\u4E8E\u5546\u4E1A\u4EE5\u53CA\u975E\u6CD5\u7528\u9014   \n\uD83D\uDCCC \u7981\u6B62\u4EFB\u4F55\u516C\u4F17\u53F7\u3001\u81EA\u5A92\u4F53\u8FDB\u884C\u4EFB\u4F55\u5F62\u5F0F\u7684\u8F6C\u53D1   \n\uD83D\uDCCC \u811A\u672C\u6587\u4EF6\u8BF7\u5728\u4E0B\u8F7D\u8BD5\u7528\u540E24\u5C0F\u65F6\u5185\u81EA\u884C\u5220\u9664   \n\uD83D\uDCCC \u56E0\u4F7F\u7528\u811A\u672C\u9020\u6210\u8F6F\u4EF6\u5E73\u53F0\u7684\u4E00\u5207\u635F\u5931\u7686\u7531\u4F7F\u7528\u8005\u627F\u62C5   \n\uD83D\uDCCC \u811A\u672C\u6587\u4EF6\u5982\u6709\u4E0D\u614E\u88AB\u7834\u89E3\u6216\u4FEE\u6539\u7531\u7834\u89E3\u6216\u4FEE\u6539\u8005\u627F\u62C5   \n\uD83D\uDCCC \u5982\u4E0D\u63A5\u53D7\u6B64\u6761\u6B3E\u8BF7\u7ACB\u5373\u5220\u9664\u811A\u672C\u6587\u4EF6");
   await $.ExamineCookie();
   if ($.cookie_list.length < 11) {
     let _0x28c8d3 = $.cookie_list.filter(_0x4d6539 => _0x4d6539.logs == true);
@@ -160,7 +162,7 @@ $ = 蛋炒饭_0x2bef4e();
       await $.Multithreading("shuavideopre");
     }
   } else {
-    console.log("账号数量超过限制，请减少账号数量后重试！");
+    console.log("\u8D26\u53F7\u6570\u91CF\u8D85\u8FC7\u9650\u5236\uFF0C\u8BF7\u51CF\u5C11\u8D26\u53F7\u6570\u91CF\u540E\u91CD\u8BD5\uFF01");
   }
   let _0x406a13 = [];
   for (let _0x2dbaae of $.cookie_list) {
@@ -203,9 +205,9 @@ function 蛋炒饭_0x2bef4e() {
         }
         _0x3fa364 = $.cookie_list.length;
       } else {
-        console.log("\n【" + NAME + "】：未填写变量: " + VALY);
+        console.log("\n\u3010" + NAME + "\u3011\uFF1A\u672A\u586B\u5199\u53D8\u91CF: " + VALY);
       }
-      console.log("共找到" + _0x3fa364 + "个账号");
+      console.log("\u5171\u627E\u5230" + _0x3fa364 + "\u4E2A\u8D26\u53F7");
       return $.cookie_list;
     }
     ["task"](_0x4e5341, _0x45dfcf, _0x380900, _0x37678a, _0x54685c) {
@@ -244,9 +246,9 @@ function 蛋炒饭_0x2bef4e() {
           try {
             if (_0x5b0b56) {
               if (LOGS == 1) {
-                console.log("================ 请求 ================");
+                console.log("================ \u8BF7\u6C42 ================");
                 console.log(_0x3b1d6c);
-                console.log("================ 返回 ================");
+                console.log("================ \u8FD4\u56DE ================");
                 if ($.safeGet(_0x5b0b56)) {
                   console.log(JSON.parse(_0x5b0b56));
                 } else {
@@ -265,7 +267,7 @@ function 蛋炒饭_0x2bef4e() {
                 _0x5b0b56.indexOf("/") != -1 && _0x5b0b56.indexOf("+") != -1 ? _0x499a48 = _0x5b0b56 : _0x499a48 = _0x5b0b56;
               }
             } else {
-              _0x499a48 = _0x45dfcf + "   API请求失败，请检查网络重试\n" + _0x215389;
+              _0x499a48 = _0x45dfcf + "   API\u8BF7\u6C42\u5931\u8D25\uFF0C\u8BF7\u68C0\u67E5\u7F51\u7EDC\u91CD\u8BD5\n" + _0x215389;
             }
             return _0x1b80c8(_0x499a48);
           }
@@ -418,12 +420,12 @@ function 蛋炒饭_0x2bef4e() {
       return _0x41b15f;
     }
     ["nowtime"]() {
-      return new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 8 * 60 * 60 * 1000);
+      return new Date(new Date().getTime() + new Date().getTimezoneOffset() * 60 * 1000 + 480 * 60 * 1000);
     }
     ["timecs"]() {
       let _0x949b1e = $.nowtime();
       JSON.stringify(_0x949b1e).indexOf(" ") >= 0 && (_0x949b1e = _0x949b1e.replace(" ", "T"));
-      return new Date(_0x949b1e).getTime() - 8 * 60 * 60 * 1000;
+      return new Date(_0x949b1e).getTime() - 480 * 60 * 1000;
     }
     ["rtjson"](_0x119608, _0x229a09, _0x4803f1, _0x1a46fd) {
       if (_0x1a46fd == 0) {
